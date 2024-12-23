@@ -1,0 +1,35 @@
+{{>header}}
+
+<section class="page-section" id=services">
+    <div class="container px-4 px-lg-5 h-100">
+        <div class="row gx-4 gx-lg-5 h-100 justify-content-center">
+            <div class="col-lg-8 col-xl-6 text-center">
+                <h2 class="text-white-75 mt-0">로그인 페이지입니다.</h2>
+                <hr class="divider" />
+                <p class="text-white-75 mb-5">로그인을 페이지입니다.</p>
+            </div>
+        </div>
+        <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+            <div class="col-lg-6">
+
+                <form id="contactForm" action="recommend_hospital" enctype="application/x-www-form-urlencoded">
+
+                    <div class="form-group mb-3">
+                        <label for="request">ID:</label>
+                        <input class="form-control" id="name" type="text" name="request" placeholder="id">
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="latitude">PASSWORD:</label>
+                        <input class="form-control" id="phone" type="text" name="latitude" placeholder="password">
+                    </div>
+
+                    <div class="d-grid">
+                        <input class = "btn btn-primary btn-xl" id="submitButton" type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{{>footer}}

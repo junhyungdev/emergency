@@ -1,0 +1,57 @@
+{{>header}}
+
+<section class="page-section" id=services">
+    <div class="container px-4 px-lg-5 h-100">
+        <div class="row gx-4 gx-lg-5 h-100 justify-content-center">
+            <div class="col-lg-8 col-xl-6 text-center">
+                <h2 class="text-white-75 mt-0">회원가입 페이지입니다.</h2>
+                <hr class="divider" />
+                <p class="text-white-75 mb-5">회원가입 페이지입니다.</p>
+            </div>
+        </div>
+        <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+            <div class="col-lg-6">
+
+<!--                <form id="contactForm" action="http://127.0.0.1:8000/signup" enctype="application/x-www-form-urlencoded">-->
+                <!--https://mini7-spring-a061242-aqfterh7c5h5hcce.koreacentral-01.azurewebsites.net/-->
+                <form id="contactForm" action="http://localhost:8080/signup" enctype="application/x-www-form-urlencoded">
+                    <div class="form-group mb-3">
+                        <label for="request">NAME:</label>
+                        <input class="form-control" id="name" type="text" name="name" placeholder="name" required>
+                    </div>
+
+
+                    <div class="form-group mb-3">
+                        <label for="request">ID:</label>
+                        <input class="form-control" id="id" type="text" name="id" placeholder="id" required>
+                    </div>
+
+
+                    <div class="form-group mb-3">
+                        <label for="latitude">PASSWORD:</label>
+                        <input class="form-control" id="password" type="password" name="password" placeholder="password" required>
+                    </div>
+
+
+                    <div class="form-group mb-3">
+                        <label for="latitude">PHONE:</label>
+                        <input class="form-control" id="phone" type="tel" name="phone" placeholder="phone number" required>
+                    </div>
+
+
+                    <div class="form-group mb-3">
+                        <label for="latitude">E-MAIL:</label>
+                        <input class="form-control" id="email" type="email" name="email" placeholder="email" required>
+                    </div>
+
+
+                    <div class="d-grid">
+                        <input class = "btn btn-primary btn-xl" id="submitButton" type="submit" value="Submit">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{{>footer}}

@@ -1,0 +1,46 @@
+{{>header}}
+
+<!--Recommend-->
+<section class="page-section" id="recommend">
+    <div class="container">
+        <div class="row gx-4 gx-lg-5 h-100 justify-content-center">
+            <div class="col-lg-8 col-xl-6 text-center">
+                <h2 class="text-white-75 mt-0">응급상황을 입력해주세요</h2>
+                <hr class="divider" />
+                <p class="text-white-75 mb-5">아래의 병원 중 가까운 병원으로 자동 연결됩니다. 구급대원을 기다려주세요.</p>
+            </div>
+        </div>
+        <div class="">
+            <table class="table table-dark text-white-75">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Hospital Name</th>
+                    <th>Address</th>
+                    <th>Tel</th>
+                    <th>Latitude</th>
+                    <th>Longitude</th>
+                    <th>Distance (km)</th>
+                    <th>Time</th>
+                </tr>
+                </thead>
+                <tbody>
+                {{#hospitalList}}
+                    <tr>
+                        <td>-</td>
+                        <td>{{hospitalName}}</td>
+                        <td>{{address}}</td>
+                        <td>{{tel}}</td>
+                        <td>{{latitude}}</td>
+                        <td>{{longitude}}</td>
+                        <td>{{distance}} km</td>
+                        <td>{{time}}</td>
+                    </tr>
+                {{/hospitalList}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+{{>footer}}
